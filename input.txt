@@ -1,0 +1,13 @@
+add $t0,$t1,$t3
+and $s0,$s1,$s3
+sub $s0,$s1,$s3
+slt $t0,$s0,$s1
+sw $s2,2($t3)
+lw $s2,2($t3)
+addi $t0,$t1,-6
+beq $t0,$t1,-6
+sll $t0,$t1,4
+j -7
+j 7
+j 5
+
